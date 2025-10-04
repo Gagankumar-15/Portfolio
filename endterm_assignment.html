@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+    body{ 
+        margin: 0px;
+        padding: 0px; 
+        font-family: Arial, sans-serif;
+        background-color: rgb(233, 232, 232);
+    }
+    header{ 
+        background-color: rgb(66, 65, 65);
+        color: white;
+        text-align: center;
+        padding: 10px 0px ; 
+        border-bottom: 2px solid black;
+
+    }
+nav a{ 
+    color:white;
+    text-decoration: none;
+    margin: 0px 15px ;
+    font-weight: bold;
+}
+
+nav a:hover{ 
+    text-decoration: underline;
+    color: rgb(218, 218, 214);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    
+    
+}
+
+.hero{ 
+    background-color: rgb(144, 144, 144);
+    color: white; 
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about{ 
+    text-align: center; 
+    font-size: 20px;
+}
+.about, .projects, .contact{
+    padding: 20px; 
+    margin :20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+ .project{ 
+    border: 1px solid black;
+    background-color: rgb(191, 190, 190);
+    padding: 10px; 
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+footer{ 
+    text-align: center; 
+    padding: 10px ; 
+    background-color:rgb(66, 65, 65); 
+    color: white;
+    margin-top: 20px;
+    border-top: 2px solid black;
+
+}
+.contact a{ 
+    text-decoration: none;
+    color: blue;
+    
+}
+.contact a:hover{ 
+    text-decoration: underline;
+    color: darkblue;
+}
+.project:hover{ 
+    background-color: rgb(161, 160, 160);
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    display: inline-block;
+    margin: 8px;
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .about,
+  .projects,
+  .contact {
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 6px 0;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .about,
+  .projects,
+  .contact {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .project-1,
+  .project-2 {
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  nav a {
+    font-size: 20px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .about,
+  .projects,
+  .contact {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1> My Portfolio</h1>
+        <nav>
+            <a href="#home"> Home </a>
+            <a href="#about"> About </a>
+            <a href="#projects"> Projects </a>
+            <a href="#contact"> Contact </a>
+        </nav>
+    </header>
+        <section id="home" class="hero">
+            <h1> Hello! , I'm Pilli Gagan Kumar </h1>
+            <img src="portfolio pic.jpg" alt="Gagan Kumar pic " width="200" height="200" style="border-radius: 50%; border: 2px solid black;">
+            <p> Aspiring web developer </p>
+
+        </section>
+
+        <section id="about" class="about">
+            <p> Hi! , I am learning Web Development and love creating simple , clean websites . I am enjoying by doing
+                coding and improving my skills day by day</p>
+        </section>
+
+        <section id="projects" class="projects"> 
+            <h1> My Projects</h1>
+            <div class="project"> 
+                <h3> Project-1</h3>
+                <p> This is my First project in the web Development</p>
+            </div> 
+
+                    <div class="project"> 
+                        <h3> Project-2 </h3>
+                        <p> A calculator Using Java</p>
+                    </div>  
+        </section>
+<section id="contact" class="contact"> 
+    <h2> Contact Me:</h2>
+    <p> Email: <a href="mailto:pilligagankumaryadav15@gmail.com">pilligagankumaryadav15@gmail.com </a></p>
+    <p> Github: <a href="https://github.com/Gagankumar-15">Gagankumar-15</a></p>
+    <p> Linkedin: <a href="www.linkedin.com/in/gagan-kumar-473697379"> Gagan Kumar</a></p>
+</section>
+
+<footer><p>&copy;Gagan kumar , All rights reserved. </p></footer>
+
+    </header>
+</body>
+
+</html>
